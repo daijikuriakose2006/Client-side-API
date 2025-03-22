@@ -6,6 +6,84 @@
     <title>AI Assistant</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #6200ea;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            margin: 0;
+        }
+        .theme-toggle button {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .model-selection, .prompt-container, .response-container, .favorites-container {
+            background-color: #fff;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .model-selection label, .prompt-container textarea, .button-container button, .favorites-container h2 {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .model-selection select, .prompt-container textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #submit-btn {
+            background-color: #6200ea;
+            color: #fff;
+        }
+        #clear-btn {
+            background-color: #ccc;
+            color: #333;
+        }
+        .response-card {
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .placeholder-text {
+            color: #999;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
